@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>reflection</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/favicon.jpg">
+    </head>
+    
+    <body>
+        <!--navbar-->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><button id="theme-button" type="button">Dark Mode</button></li>
+            </ul>
+        </div>
+
+        <!--headings-->
+        <div class="header-container" id="home">
+            <div class="header-item">
+                <img id="header-img" src="./img/header.jpg" width="100%" height="150px"/>
+            </div>
+            <div class="header-item">
+                <h1>reflection</h1>
+                <h2>reflect. connect. back to yourself.</h2>
+                <button class="header-button" type="button">RSVP</button>
+                <button class="header-button" type="button">Resources</button>
+            </div>
+        </div>
+        
+        <!--about--> 
+        <div class="about-container" id="about">
+            <h2>About the Event</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PrqwxkBB0DA?si=d09LOdzULtWDbAa7" title="Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>A space to pause, look inward, and rediscover the moments 
+                that shape us. We explore our personal journeys and share insights 
+                through thoughtful discussions and creative activities. It’s a 
+                time to reconnect with ourselves and gain fresh perspectives. 
+                Join us for an experience that blends introspection with inspiration.
+                Everyone is welcome.</p>
+
+            <h3>What to Expect</h3>
+            <h4>Prepare an open mind!!!</h4>
+            <ul class="heart-list">
+                <li> Gentle reflection activities to explore personal growth</li>
+                <li> Cozy group discussions in a supportive, non-judgmental space</li>
+                <li> Quiet time for individual reflection and journaling</li>
+                <li> Mindfulness exercises to help you center and relax</li>
+                <li> A nurturing environment to leave feeling refreshed and inspired</li>
+            </ul>
+        </div>
+
+        <!--schedule-->
+        <div class="schedule" id="schedule">
+            <h2>Event Schedule</h2>
+            <div class="schedule-container">
+                <div class="activity">
+                    <img src="img/journal.jpeg" alt="Journaling activity" height =200px/>
+                    <h3>Day 1: Journaling</h3>
+                    <p>Space to reflect, share stories, connect with others through Guided Journaling, Memorying Map, and Sharing Circle. These moments invite growth, healing, and a deeper understanding of ourselves.</p>
+                </div>    
+                <div class="activity">
+                    <img src="img/vision_board.jpeg" alt="Creating vision board activity" height =200px/>
+                    <h3>Day 3: Creative Expression</h3>
+                    <p>Tap into your inner voice through art, poetry, or free writing. This session encourages you to express your emotions and aspirations in a creative format, helping you explore your story in a fresh and personal way.</p>
+                </div>
+                <div class="activity">
+                    <img src="img/vision_board.jpeg" alt="Creating vision board activity" height =200px/>
+                    <h3>Day 3: Vision Board</h3>
+                    <p>Create a visual representation of your dreams and goals. Let's build a collage that reflects your aspirations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--rsvp--> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>We’d love to have you join us for this heartfelt experience! Come as you are—let’s grow, heal, and create together. 💫 RSVP now to save your spot!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Alexis from Texas has RSVP'd.</p>
+                    <p>🎟️ Amy from New York has RSVP'd.</p>
+                    <p>🎟️ Teresa from California has RSVP'd.</p>
+                    <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                    <label for="state">State: </label>
+                    <input type="text" id="state">
+                    <button id="rsvp-submit" type="submit">Submit RSVP</button>
+                </form>
+            </div>      
+        </div>
+
+        <!--links--> 
+        <div class="links-container" id="links">
+            <h2>Links</h2>
+            <a class="link" href="https://www.youtube.com/watch?v=pitV-DlcrcE" target="_blank">
+                <article>
+                    <h3 class="text-link">Guided 10-minute Meditation</h3>
+                </article>
+            </a>
+            <p>A short guided meditation to refresh yourself</p>
+            <a class="link" href="https://www.youtube.com/watch?v=tqhxMUm7XXU" target="_blank">
+                <article>
+                    <h3 class="text-link">Another Guided Meditation</h3>
+                </article>
+            </a>
+            <p>Try this as well!</p>
+        </div>
+            
+        <!--footer--> 
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/nhuha2006/">Learn more</a>
+            <a href="https://www.linkedin.com/in/nhuha2006/">Email our team</a>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+html {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-color); 
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 40px;
+    margin: 0px;
+}
+
+/* link */ 
+a:link{
+    color: var(--accent-color-link);
+}
+a:visited{
+    color: rgb(33, 113, 61);
+}
+a:hover {
+    color: var(--accent-color-hover-link);
+}
+a:active{
+    color: var(--accent-color-active-link);
+}
+
+h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--text-color);
+    font-weight: 2000;
+}
+
+/* header */
+.header-container { 
+    padding-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 20px;
+}
+.header-item:nth-of-type(1){
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.header-item:nth-of-type(2){
+    width: 70%;
+}
+#header-img{
+    max-width: max-content;
+}
+.header-container h1 {
+    padding-top: 0;
+    margin-top: 0;
+    color: var(--accent-color-medium);
+    background-color: var(--accent-color-light);
+    font-size: 48px;
+}
+button {
+    background-color: var(--bg-medium-pink);    /* button color */
+    color: white;               /* text color */
+    font-weight: bold;
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: url(img/cursor-empty_heart.jpg) 16 16, auto;           /* makes the cursor change when over button */
+}
+button:hover {
+    background-color: var(--accent-color-hover-button); /* Slightly darker background on hover */
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-medium-brown-dark-mode);
+    padding: 5px;
+    font-size: 10;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--text-color-dark-mode);
+    margin: 0 10px;
+}
+
+/* Navigation bar (navbar) */
+#theme-button{ 
+    font-size: 12px;
+    font: 1em serif;
+}
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 70px;
+    margin-top: 0;
+    background-color: var(--bg-light-pink);
+    font-weight: bold;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+    font-size: 19px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: ;
+}
+
+/* About Section */
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+#web-description {
+    border-bottom: 0px;
+}
+.about-container ul{
+    padding: 15px;
+    border: 1px dashed;
+    
+}
+.heart-list li{
+    list-style-type: none;
+}
+.heart-list li::before{
+    content: '\2661';
+    color: var(--text-color);
+}
+.about-container h3,h4 {
+    text-align: center;
+    margin: 5px;
+}
+
+/* Schedule Section */
+.schedule h2{
+    text-align: center;
+}
+.schedule-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.activity{
+    background-color: rgb(227, 192, 198);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+.activity img{
+    max-width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+.activity h3{
+    text-align: left;
+    margin-bottom: 0px;
+}
+.activity p{
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Links Section */
+a{
+    text-decoration: none;
+}
+.text-link{
+    text-decoration: underline;
+}
+
+/* RSVP Section */
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+
+/* Default dark mode */
+.dark-mode {
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
+}
+.dark-mode h1 {
+    color: var(--accent-color-link);
+    background-color: var(--bg-light-pink);
+}
+.dark-mode .header-item:nth-of-type(2) h2 {
+    color: var(--text-color-dark-mode);
+}
+.dark-mode h2 {
+    color: var(--bg-light-pink);
+    border-bottom: 1px solid var(--bg-light-pink);
+}
+.dark-mode .activity{
+    background-color: var(--bg-medium-brown-dark-mode);
+}
+.dark-mode .links-container a{
+    color: rgb(164, 222, 164);
+}
+.dark-mode a:visited * {
+    color: #e7cd3a;
+}
+
+
+/* Custom Colors */
+:root {
+    /* Light Mode */
+    --bg-color: #EDE3DA;
+    --text-color: #54463A;
+    --bg-light-pink: #E3C0C6;
+    --bg-medium-pink: #D08B97;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #54463A ;
+    --text-color-dark-mode: #EDE3DA;
+    --bg-medium-brown-dark-mode: #947961;
+    --bg-light-brown-dark-mode: #c29f81;
+
+    /* Accent Colors */
+    --accent-color-light: #F9F7F4;
+    --accent-color-medium: #9E7A5A;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+    --accent-color-link: #ab276d;
+    --accent-color-hover-link: #E67CB6;
+    --accent-color-active-link: #BB841E;
+    --accent-color-hover-button: #71464c;
+
+    /* Error Colors */
+    --error-color: #7eb2dc;
+    --error-color-border: #095898;
+}
